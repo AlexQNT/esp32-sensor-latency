@@ -1,0 +1,3 @@
+Oct 15: Built a blink circuit on pin 4 with a 120 ohm resistor and tested serial hello at 115200 baud. Handled all the wiring, code typing, and debugging independently. Predicted 10 blinks in 10 seconds and 20 lines in 10 seconds, and visually counted about 10 to 11 and 19. Initial mistakes involved function names, confusing resistors with transistors, and LED leg spacing.
+
+Oct 16: The PulseView nightly build crashed due to a missing Python library, but version 0.4.2 opens successfully on the demo device. Cleaned up two sketch files that each held multiple sketches and pushed two commits to the repo. The logic analyzer requires a cable I do not have with me, and the socket appears to be mini-USB.
