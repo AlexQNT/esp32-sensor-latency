@@ -5,4 +5,4 @@ Oct 16: The PulseView nightly build crashed due to a missing Python library, but
 Oct 18: So, I did some predictions  before taking measurements on P4 and they are: 500 ms on and 500ms off.
 A bit about setup. I connected logic analyzer to the hub, then i used M/F wires, M side's were plugged in to CH1 and GND ports, and CH1 was connected to the same row where resistor leg sits, and GND was connected to where short leg of LED light sits.
 Some parts also went wrong. Today, after re-assembly LED was not blinking but i fixed this problem after switching P4 and GND wires.
-And here is the wiring on a breadboard: 9B, 15C, 9-14A, 14B-15B, 9C, 15D
+Measured: 4 periods between falling edges, 4000100 us total, so one period is 1000025 us. Predicted 1000 ms.
