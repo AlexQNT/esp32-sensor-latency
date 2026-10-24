@@ -6,3 +6,7 @@ Oct 18: So, I did some predictions  before taking measurements on P4 and they ar
 A bit about setup. I connected logic analyzer to the hub, then i used M/F wires, M side's were plugged in to CH1 and GND ports, and CH1 was connected to the same row where resistor leg sits, and GND was connected to where short leg of LED light sits.
 Some parts also went wrong. Today, after re-assembly LED was not blinking but i fixed this problem after switching P4 and GND wires.
 Measured: 4 periods between falling edges, 4000100 us total, so one period is 1000025 us. Predicted 1000 ms.
+
+Oct 24: Predicted 0. The first run printed 0 as I expected, but that was misleading: with the wake-up lines removed, the MPU still held the 0 my wake-up lines had written earlier, because re-uploading doesn't reset it. After unplugging the USB cable for about a minute, it printed 40. So the chip starts asleep (0x40 has the SLEEP bit set), and my four wake-up lines clear it.
+Result: the MPU keeps its settings across a re-upload, only cutting its power
+resets it.
